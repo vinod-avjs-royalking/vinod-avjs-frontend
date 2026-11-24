@@ -1,0 +1,22 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{background:#0f0f0f;color:#fff}
+.app{max-width:480px;margin:auto;padding:12px}
+.header{display:flex;justify-content:space-between;align-items:center;background:#1a1a1a;padding:14px;border-radius:12px;border:1px solid gold}
+.logo{font-weight:900;font-size:18px;line-height:1}
+.logo span{color:gold;font-size:14px}
+.wallet{background:gold;color:#000;padding:8px 12px;border-radius:20px;font-weight:700}
+.user-card{display:flex;align-items:center;gap:10px;background:#1a1a1a;margin:12px 0;padding:12px;border-radius:12px}
+.avatar{border-radius:50%;border:2px solid gold}
+.menu{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:10px 0}
+.menu button,.page button{background:linear-gradient(45deg,#FFD700,#FF8C00);color:#000;border:none;padding:10px;border-radius:10px;font-weight:700;cursor:pointer}
+.page{display:none;background:#1a1a1a;padding:14px;border-radius:12px;margin:10px 0}
+.page.active{display:block}
+.offer{display:flex;justify-content:space-between;background:#222;padding:10px;border-radius:10px;margin:8px 0}
+.flow{text-align:center}
+.box{background:#222;padding:10px;border-radius:10px;margin:6px 0;border:1px solid #444}
+.box.gold{border:1px solid gold;background:#2a2200}
+.row{display:flex;gap:8px}.row .box{flex:1}
+.note{font-size:12px;color:#aaa;margin-top:10px}
+.admin{background:#111;border:1px solid #333;padding:12px;border-radius:12px;margin-top:12px}
+input{width:100%;padding:12px;margin:8px 0;border-radius:10px;border:none;background:#222;color:#fff}
+h3{margin:10px 0}
