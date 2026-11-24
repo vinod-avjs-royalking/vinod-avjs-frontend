@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VINOD AVJS ROYAL KING</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <div class="header">
+    <div class="logo">VINOD AVJS<br><span>ROYAL KING</span></div>
+    <div class="wallet">💰 <span id="balance">₹0</span></div>
+  </div>
+  <div class="card user-card">
+    <img src="https://i.pravatar.cc/60" class="avatar">
+    <div><b id="userName">VINOD AVJS</b><br><small id="userId">ID: RK-123456</small></div>
+    <button onclick="logout()">Logout</button>
+  </div>
+  <div class="menu">
+    <button onclick="show('home')">🏠 Home</button>
+    <button onclick="show('earning')">💰 Earning</button>
+    <button onclick="show('referral')">👥 Referral</button>
+    <button onclick="show('wallet')">👛 Wallet</button>
+    <button onclick="show('withdraw')">🏧 Withdrawal</button>
+  </div>
+  <div id="home" class="page active">
+    <h3>🔥 Aaj ke Offers</h3>
+    <div class="offer">📱 App Install - <b>₹20</b> <button onclick="doTask('App Install',20)">Start</button></div>
+    <div class="offer">🎮 Game Khelo - <b>₹10</b> <button onclick="doTask('Game',10)">Start</button></div>
+    <div class="offer">📺 Video Dekho - <b>₹5</b> <button onclick="doTask('Video',5)">Start</button></div>
+    <div class="offer">📝 Survey - <b>₹15</b> <button onclick="doTask('Survey',15)">Start</button></div>
+    <h3>💰 Asli Kamai ka Model</h3>
+    <div class="flow">
+      <div class="box">Advertisers / Sponsors<br><small>Verified Revenue</small></div> ↓
+      <div class="box gold">VINOD AVJS ROYAL APPS<br><small>Verified revenue - expenses ke hisaab se</small></div> ↓
+      <div class="row"><div class="box">Owner Profit</div><div class="box">User Rewards</div></div>
+    </div>
+    <p class="note">⚠️ Kamai ka paisa keval swatantra razasv ke aadhar par banta jayega. Fake click nahi hoga.</p>
+  </div>
+  <div id="earning" class="page">
+    <h3>💰 Earning</h3>
+    <p>Total Earning: <b id="totalEarn">₹0</b></p>
+    <p>Today: <b id="todayEarn">₹0</b></p>
+  </div>
+  <div id="referral" class="page">
+    <h3>👥 Referral</h3>
+    <p>Code: <b id="refCode">RK-VINOD123</b></p>
+    <button onclick="copyRef()">Copy Code</button>
+    <p>Har dost par ₹10 + uski earning ka 10%</p>
+  </div>
+  <div id="wallet" class="page">
+    <h3>👛 Wallet</h3>
+    <h1 id="walletBal">₹0</h1>
+    <p>Minimum Withdrawal: ₹100</p>
+    <button onclick="show('withdraw')">Withdraw Karo</button>
+  </div>
+  <div id="withdraw" class="page">
+    <h3>🏧 Withdrawal</h3>
+    <input id="upi" placeholder="UPI ID - vinod@paytm">
+    <input id="amount" type="number" placeholder="Amount - Min ₹100">
+    <button onclick="withdraw()">Withdraw Request</button>
+  </div>
+  <div class="admin">
+    <h3>🛡️ Admin Panel</h3>
+    <p>Users: <span id="adminUsers">0</span> | Revenue: <span id="adminRev">₹0</span> | Profit: <span id="adminProfit">₹0</span></p>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
